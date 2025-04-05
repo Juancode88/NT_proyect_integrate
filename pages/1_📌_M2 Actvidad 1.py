@@ -94,16 +94,10 @@ st.dataframe(df_csv)
 
 # 6. DataFrame desde Excel local
 st.subheader("6. Datos desde Excel")
-# Crear archivo Excel temporal
-excel_data = pd.DataFrame({
-    "producto": ["Monitor", "Teclado", "Mouse"],
-    "precio": [200, 50, 30],
-    "stock": [10, 25, 40]
-})
-excel_data.to_excel("data.xlsx", index=False)
+df = pd.read_excel('alternos\primer_excels.xlsx', engine='openpyxl')
 
-df_excel = pd.read_excel("data.xlsx")
-st.dataframe(df_excel)
+# Mostrar en Streamlit
+st.dataframe(df)
 
 # 7. DataFrame desde JSON
 st.subheader("7. Datos de Usuarios desde JSON")
