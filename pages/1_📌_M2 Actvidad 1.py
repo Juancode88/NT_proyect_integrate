@@ -94,7 +94,7 @@ st.dataframe(df_csv)
 
 # 6. DataFrame desde Excel local
 st.subheader("6. Datos desde Excel")
-df = pd.read_excel('alternos\primer_excels.xlsx', engine='openpyxl')
+df = pd.read_excel('static/alternos/primer_excels.xlsx', engine='openpyxl')
 
 # Mostrar en Streamlit
 st.dataframe(df)
