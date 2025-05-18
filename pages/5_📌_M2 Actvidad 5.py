@@ -26,4 +26,5 @@ st.markdown("""
 """)
 
 st.header("Solución")
-
+st.markdown("Link de la hoja de google colab con los pasos realizados en clase (click en la parte azul)")
+st.markdown("Visita mi [Hoja de google colab](https://colab.research.google.com/drive/10utbu4-jojQcZ85y8lDac8e9vXaSrAcu?usp=sharing) para más información.")
